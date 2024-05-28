@@ -1,0 +1,8 @@
+2024-05-28 14:07:08,921.v1_emitter_of_tasks.INFO ==================================================
+2024-05-28 14:07:08,922.v1_emitter_of_tasks.INFO Today is 2024-05-28 at 02:07 PM
+2024-05-28 14:07:08,922.v1_emitter_of_tasks.INFO Running on: posix Darwin 20.6.0
+2024-05-28 14:07:08,922.v1_emitter_of_tasks.INFO Python version:  3.11.4
+2024-05-28 14:07:08,922.v1_emitter_of_tasks.INFO Python path: /Users/jakerood/streaming-04-multiple-consumers/.venv
+2024-05-28 14:07:08,922.v1_emitter_of_tasks.INFO Working dir: /Users/jakerood/streaming-04-multiple-consumers
+2024-05-28 14:07:08,922.v1_emitter_of_tasks.INFO ==================================================
+2024-05-28 14:07:13,061.v1_emitter_of_tasks.INFO  [x] Sent First task...

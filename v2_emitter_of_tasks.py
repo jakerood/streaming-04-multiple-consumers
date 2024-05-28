@@ -11,6 +11,10 @@ import pika
 import sys
 import webbrowser
 
+# Import and configure the logger 
+from util_logger import setup_logger
+logger, logname = setup_logger(__file__)
+
 def offer_rabbitmq_admin_site():
     """Offer to open the RabbitMQ Admin website"""
     ans = input("Would you like to monitor RabbitMQ queues? y or n ")
@@ -44,9 +48,9 @@ def send_message(host: str, queue_name: str, message: str):
         # every message passes through an exchange
         ch.basic_publish(exchange="", routing_key=queue_name, body=message)
         # print a message to the console for the user
-        print(f" [x] Sent {message}")
+        logger.info(f" [x] Sent {message}")
     except pika.exceptions.AMQPConnectionError as e:
-        print(f"Error: Connection to RabbitMQ server failed: {e}")
+        logger.error(f"Error: Connection to RabbitMQ server failed: {e}")
         sys.exit(1)
     finally:
         # close the connection to the server
